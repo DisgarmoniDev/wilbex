@@ -1,43 +1,46 @@
-import './header.scss'
-
+import { NavLink } from 'react-router-dom'
 import { svg } from '../svg/svg'
+
+import './header.scss'
 
 export const Header = () => {
   return (
     <header className='header'>
       <nav className='nav'>
         <div className="nav__logo">
-          <img src="img/header/logo_welbex.svg" alt="logo" />
+          <NavLink to='/'>
+            <img src="img/header/logo_welbex.svg" alt="logo" />
+          </NavLink>
         </div>
         <ul className='list'>
           <li className='list__links'>
-            <a href="" className='list__links-link'>Услуги</a>
+            <NavLink to="nfp" className='list__links-link'>Услуги</NavLink>
           </li>
           <li className='list__links'>
-            <a href="" className='list__links-link'>Виджеты</a>
+            <NavLink to="nfp" className='list__links-link'>Виджеты</NavLink>
           </li>
           <li className='list__links'>
-            <a href="" className='list__links-link'>Интеграции</a>
+            <NavLink to="nfp" className='list__links-link'>Интеграции</NavLink>
           </li>
           <li className='list__links'>
-            <a href="" className='list__links-link'>Кейсы</a>
+            <NavLink to="nfp" className='list__links-link'>Кейсы</NavLink>
           </li>
           <li className='list__links'>
-            <a href="" className='list__links-link'>Сертификаты</a>
+            <NavLink to="nfp" className='list__links-link'>Сертификаты</NavLink>
           </li>
         </ul>
         <div className="contacts">
           <a className='contacts__phone' href="tel:+7 555 555-55-55">+7 555 555-55-55</a>
           <div className="contacts__messengers">
-            <a href="" className="contacts__messengers-icon">
+            <NavLink to="nfp" className="contacts__messengers-icon">
               {svg.telegram}
-            </a>
-            <a href="" className="contacts__messengers-icon">
+            </NavLink>
+            <NavLink to="nfp" className="contacts__messengers-icon">
               {svg.viber}
-            </a>
-            <a href="" className="contacts__messengers-icon">
+            </NavLink>
+            <NavLink to="nfp" className="contacts__messengers-icon">
               {svg.whatsapp}
-            </a>
+            </NavLink>
           </div>
         </div>
       </nav>

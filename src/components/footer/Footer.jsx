@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import { svg } from '../svg/svg'
 import './footer.scss'
 
@@ -8,35 +9,35 @@ export const Footer = () => {
         <div className="footerNav__company">
           <p className="footerNav__company-title">О компании</p>
           <div className="footerNav__company-list">
-            <a href="" className="navLink">Партнёрская программа</a>
-            <a href="" className="navLink">Вакансии</a>
+            <NavLink to="nfp" className="navLink">Партнёрская программа</NavLink>
+            <NavLink to="nfp" className="navLink">Вакансии</NavLink>
           </div>
         </div>
         <div className="footerNav__menu">
           <p className="footerNav__menu-title">Меню</p>
           <div className="footerNav__menu-list">
-            <a href="" className="navLink">Расчёт стоимости</a>
-            <a href="" className="navLink">Кейсы</a>
-            <a href="" className="navLink">Услуги</a>
-            <a href="" className="navLink">Благодарственные письма</a>
-            <a href="" className="navLink">Виджеты</a>
-            <a href="" className="navLink">Сертификаты</a>
-            <a href="" className="navLink">Интеграции</a>
-            <a href="" className="navLink">Блог на Youtube</a>
-            <a href="" className="navLink">Наши клиенты</a>
-            <a href="" className="navLink">Вопрос / Ответ</a>
+            <NavLink to="nfp" className="navLink">Расчёт стоимости</NavLink>
+            <NavLink to="nfp" className="navLink">Кейсы</NavLink>
+            <NavLink to="nfp" className="navLink">Услуги</NavLink>
+            <NavLink to="nfp" className="navLink">Благодарственные письма</NavLink>
+            <NavLink to="nfp" className="navLink">Виджеты</NavLink>
+            <NavLink to="nfp" className="navLink">Сертификаты</NavLink>
+            <NavLink to="nfp" className="navLink">Интеграции</NavLink>
+            <NavLink to="nfp" className="navLink">Блог на Youtube</NavLink>
+            <NavLink to="nfp" className="navLink">Наши клиенты</NavLink>
+            <NavLink to="nfp" className="navLink">Вопрос / Ответ</NavLink>
           </div>
           <div className="footerNav__menu-mob">
-            <a href="" className="navLink">Расчёт стоимости</a>
-            <a href="" className="navLink">Благодарность клиентов</a>
-            <a href="" className="navLink">Услуги</a>
-            <a href="" className="navLink">Кейсы</a>
-            <a href="" className="navLink">Виджеты</a>
-            <a href="" className="navLink">Сертификаты</a>
-            <a href="" className="navLink">Интеграции</a>
-            <a href="" className="navLink">Блог на Youtube</a>
-            <a href="" className="navLink">Наши клиенты</a>
-            <a href="" className="navLink">Вопрос / Ответ</a>
+            <NavLink to="nfp" className="navLink">Расчёт стоимости</NavLink>
+            <NavLink to="nfp" className="navLink">Благодарность клиентов</NavLink>
+            <NavLink to="nfp" className="navLink">Услуги</NavLink>
+            <NavLink to="nfp" className="navLink">Кейсы</NavLink>
+            <NavLink to="nfp" className="navLink">Виджеты</NavLink>
+            <NavLink to="nfp" className="navLink">Сертификаты</NavLink>
+            <NavLink to="nfp" className="navLink">Интеграции</NavLink>
+            <NavLink to="nfp" className="navLink">Блог на Youtube</NavLink>
+            <NavLink to="nfp" className="navLink">Наши клиенты</NavLink>
+            <NavLink to="nfp" className="navLink">Вопрос / Ответ</NavLink>
           </div>
         </div>
         <div className="footerNav__contacts">
@@ -44,15 +45,15 @@ export const Footer = () => {
           <div className="footerNav__contacts-list">
             <a href="tel:+7 555 555-55-55" className="phone">+7 555 555-55-55</a>
             <div className="messengers">
-              <a href="" className="messengers-icon">
+              <NavLink to="nfp" className="messengers-icon">
                 {svg.telegram}
-              </a>
-              <a href="" className="messengers-icon">
+              </NavLink>
+              <NavLink to="nfp" className="messengers-icon">
                 {svg.viber}
-              </a>
-              <a href="" className="messengers-icon">
+              </NavLink>
+              <NavLink to="nfp" className="messengers-icon">
                 {svg.whatsapp}
-              </a>
+              </NavLink>
             </div>
             <div className="address">Москва, Путевой проезд 3с1, к 902</div>
           </div>
@@ -61,7 +62,7 @@ export const Footer = () => {
 
       <div className="privacyPolicy">
         <p>©WELBEX 2022. Все права защищены.</p>
-        <a href="">Политика конфиденциальности</a>
+        <NavLink to="nfp">Политика конфиденциальности</NavLink>
       </div>
 
     </footer>
